@@ -1,0 +1,15 @@
+{
+  "name": "general-node-lib",
+  "version": "0.0.1",
+  "description": "General Node Lib Project Skeleton. Please Change Name ane Other.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*",
+    "cover": "istanbul cover _mocha test/**/*"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}
