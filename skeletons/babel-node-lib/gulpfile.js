@@ -48,8 +48,8 @@ gulp.task('test-cover', function() {
 
 gulp.task('clean', function() {
     return del([
-        'lib/**/*',
-        'test/lib/**/*'
+        'lib',
+        'test/lib'
     ])
 });
 
