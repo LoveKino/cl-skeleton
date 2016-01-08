@@ -22,5 +22,9 @@
     "gulp-babel": "^6.1.1",
     "mocha": "^2.3.4",
     "run-sequence": "^1.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
   }
 }

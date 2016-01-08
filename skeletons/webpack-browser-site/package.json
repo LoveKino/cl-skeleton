@@ -25,5 +25,9 @@
     "run-sequence": "^1.1.5",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
   }
 }
