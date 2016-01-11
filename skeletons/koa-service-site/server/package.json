@@ -1,17 +1,14 @@
 {
-  "name": "babel-node-lib",
+  "name": "koa-service-site-server",
   "version": "0.0.1",
-  "description": "General Babel Node Lib Project Skeleton. Please Change Name and Other.",
+  "description": "General Koa Service Server Project Skeleton. Please Change Name and Other.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/lib/**/*",
+    "test": "mocha test/lib/**/*.js",
     "cover": "istanbul cover _mocha test/lib/**/*"
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "babel-polyfill": "^6.3.14"
-  },
   "devDependencies": {
     "babel": "^6.3.26",
     "babel-cli": "^6.4.0",
@@ -22,8 +19,15 @@
     "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-babel": "^6.1.1",
+    "istanbul": "^0.4.2",
     "mocha": "^2.3.4",
     "run-sequence": "^1.1.5"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.3.14",
+    "cl-koa-midtools": "0.0.1",
+    "koa": "^1.1.2",
+    "koa-gzip": "^0.1.0"
   },
   "repository": {
     "type": "git",

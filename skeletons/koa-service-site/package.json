@@ -1,0 +1,15 @@
+{
+  "name": "koa-service-site",
+  "version": "0.0.1",
+  "description": "General Koa Service Project Skeleton. Please Change Name and Other.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "cl-spawner": "0.0.1",
+    "gulp": "^3.9.0"
+  }
+}

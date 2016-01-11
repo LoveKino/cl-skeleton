@@ -1,0 +1,33 @@
+{
+  "name": "koa-service-site-web",
+  "version": "0.0.1",
+  "description": "General Koa Service web Project Skeleton. Please Change Name and Other.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-cli": "^6.4.0",
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "cl-spawner": "0.0.1",
+    "css-loader": "^0.23.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2",
+    "run-sequence": "^1.1.5",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
