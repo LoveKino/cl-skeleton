@@ -31,7 +31,7 @@ gulp.task('restart', function() {
 });
 
 gulp.task('server', function() {
-    return spawn('node', ['./index.js']);
+    return spawn('node', ['./lib/main.js']);
 });
 
 gulp.task('init', function() {
