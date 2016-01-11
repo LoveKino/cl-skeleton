@@ -20,3 +20,10 @@ gulp.task('default', function() {
 
     return Promise.all(ts);
 });
+
+gulp.task('runProduction', function() {
+    return spawner.spawn('./node_modules/.bin/pm2', ['startOrRestart', 'config/pm2.json'], {
+            stdio: 'inherit',
+            cwd: __dirname
+        });
+});

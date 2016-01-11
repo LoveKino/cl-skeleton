@@ -11,5 +11,8 @@
   "devDependencies": {
     "cl-spawner": "0.0.1",
     "gulp": "^3.9.0"
+  },
+  "dependencies": {
+    "pm2": "^1.0.0"
   }
 }
