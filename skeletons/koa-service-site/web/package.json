@@ -29,5 +29,8 @@
   "repository": {
     "type": "git",
     "url": ""
+  },
+  "dependencies": {
+    "cl-interflow": "^0.1.6"
   }
 }
