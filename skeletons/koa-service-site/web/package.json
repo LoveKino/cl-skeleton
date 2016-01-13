@@ -31,6 +31,6 @@
     "url": ""
   },
   "dependencies": {
-    "cl-interflow": "^0.1.6"
+    "cl-interflow": "^0.1.7"
   }
 }

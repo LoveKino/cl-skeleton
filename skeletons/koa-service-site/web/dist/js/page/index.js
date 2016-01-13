@@ -17,10 +17,6 @@ webpackJsonp([0],[
 	var caller = _plainhttp.caller;
 
 	caller({
-	    options: {
-	        hostname: '127.0.0.1',
-	        port: 3000
-	    },
 	    apiName: 'add',
 	    ins: [1, 2]
 	}).then(function (res) {
@@ -414,6 +410,7 @@ webpackJsonp([0],[
 
 	                if (isPromise(out)) {
 	                    out.then(function (ret) {
+	                        ret = packOut(ret);
 	                        flush && flush(ret);
 	                        resolve(ret);
 	                    }).catch(function (err) {
@@ -422,7 +419,7 @@ webpackJsonp([0],[
 	                } else {
 	                    var ret = packOut(out);
 	                    flush && flush(ret);
-	                    resolve(packOut(out));
+	                    resolve(ret);
 	                }
 	            });
 	        };
