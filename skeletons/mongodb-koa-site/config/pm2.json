@@ -1,0 +1,11 @@
+{
+    "apps": [{
+        "name": "vane-server",
+        "script": "server/index.js",
+        "instances": 1,
+        "log_date_format": "YYYY-MM-DD HH:mm:ss",
+        "env": {
+            "NODE_ENV": "production"
+        }
+    }]
+}
