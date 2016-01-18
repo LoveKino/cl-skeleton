@@ -2,8 +2,9 @@ import config from '../../config';
 import mongodb from 'mongodb';
 
 let MongoClient = mongodb.MongoClient;
+let dbConf = config.db;
 
-let url = `mongodb://${config.db.hostname}:${config.db.port}/${config.db.dbName}`;
+let url = `mongodb://${dbConf.hostname}:${dbConf.port}/${dbConf.dbName}`;
 
 let db = null;
 
