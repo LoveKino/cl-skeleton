@@ -3,9 +3,22 @@ var Spawner = require('cl-spawner');
 
 var spawner = Spawner();
 
-var serverModule = './server/node_modules/.bin/gulp'
+gulp.task('init', function () {
+    var ts = [
+        spawner.spawn('npm', ['i'], {
+            stdio: 'inherit',
+            cwd: __dirname + '/server'
+        }),
 
-gulp.task('default', function() {
+        spawner.spawn('npm', ['i'], {
+            stdio: 'inherit',
+            cwd: __dirname + '/web'
+        })
+    ];
+    return Promise.all(ts);
+});
+
+gulp.task('default', function () {
     var ts = [
         spawner.spawn('./node_modules/.bin/gulp', [], {
             stdio: 'inherit',
@@ -21,9 +34,9 @@ gulp.task('default', function() {
     return Promise.all(ts);
 });
 
-gulp.task('runProduction', function() {
+gulp.task('runProduction', function () {
     return spawner.spawn('./node_modules/.bin/pm2', ['startOrRestart', 'config/pm2.json'], {
-            stdio: 'inherit',
-            cwd: __dirname
-        });
+        stdio: 'inherit',
+        cwd: __dirname
+    });
 });
