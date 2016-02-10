@@ -2,13 +2,12 @@ import 'babel-polyfill'; // this line must be first
 
 import koa from 'koa';
 import http from 'http';
-import methods from './methods';
 import path from 'path';
 
 import gzip from 'koa-gzip';
 
 import {
-    logger, responseTime, access, error, parseBody, api, pushMid, Static, route
+    logger, responseTime, access, error, parseBody, pushMid, Static, route
 }
 from 'cl-koa-midtools';
 
@@ -55,9 +54,7 @@ let startApp = async (conf) => {
             (ctx) => ctx.path.substring('/static'.length) // file path
         )),
 
-        parseBody,
-
-        route(/\/api/, api(methods))
+        parseBody
     ]);
 
     let server = http.createServer(app.callback());
